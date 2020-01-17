@@ -1,0 +1,36 @@
+﻿
+<table *ngIf="employee">
+    <thead>
+        <tr>
+            <th attr.colspan={{colSpan}}>
+                Employee Details
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>First Name:</td>
+            <td>{{employee.code}}</td>
+        </tr>
+        <tr>
+            <td>First Name:</td>
+            <td>{{employee.name}}</td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td>{{employee.gender}}</td>
+        </tr>
+        <tr>
+            <td>Salary:</td>
+            <td>{{employee.annualSalary}}</td>
+        </tr>
+
+    </tbody>
+</table>
+<div>
+    color preferences:
+    <input type='text' [(ngModel)]='colour' [style.background]='colour' />
+</div>
+<div style="margin-top:10px">
+    <input type="button" value="Back to employee list" (click)="onButtonClick()" />
+</div>

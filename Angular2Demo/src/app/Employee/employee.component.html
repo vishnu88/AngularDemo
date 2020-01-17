@@ -1,0 +1,279 @@
+﻿<style>
+    /*table {
+        color: #369;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        border-collapse: collapse
+    }
+
+    td {
+        border: 1px solid black;
+    }*/
+</style>
+<html>
+<head>
+    <title>Employee Details</title>
+    <!--If you move css seperate-->
+    <link rel="stylesheet" type="text/css" href=""/>
+    <style type="text/css">
+        h1 {
+            color: #369;
+            border:dotted;
+            font-family:'Comic Sans MS';
+            text-shadow:4px 4px green
+         
+        }
+        h2 {
+            color: #369;
+            border: solid
+        }
+        p b {
+            color: Green;
+            border: solid;
+            font:100
+        }
+        .style1 {
+            color: red;
+            border: solid
+          }
+        #idSelector {
+            color: Green;
+            background-color:yellow;
+            padding:20px;
+            font: 100
+        }
+        a:link { color:red
+        }
+        a:hover {
+            color:orange
+        }
+        a:active {
+            color:green
+        }
+        /*CSS3 new features boder radious cornar*/
+        td.all {
+            border-radius:75px;
+            border:double;
+            color:darkblue;
+            cursor:nw-resize
+        }
+
+        #idboderSelectorCss3 {
+            border-radius: 75px;
+            border: double;
+            background: repeating-linear-gradient(pink 15%,green 40%,red 45%);
+            cursor: nw-resize
+        }
+        #idboderSelectorCss4 {
+            border-radius: 75px 20px 50px 40px;
+            border: double;
+            color: rgba(99,9,8,0);
+            cursor: nw-resize
+        }
+        p.elipsis {
+            border:double;
+            width:200px;
+            height:50px;
+            overflow:hidden;
+            text-overflow:ellipsis
+        }
+        p.break {
+            border: double;
+            width: 200px;
+            height: 50px;
+            overflow: hidden;
+            text-overflow: clip
+        }
+
+        p .wrap {
+            border: double;
+            width: 200px;
+            height: 50px;
+            word-break: break-all
+        }
+        /*defining custom font*/
+        @font-face {
+            font-family: myFirstFont;
+            src: url(../css/font/zhi-mang-xing-v5-latin-regular.woff);
+            font-size:larger
+            
+        }
+        div.customFont {
+            font-family: myFirstFont ;
+            font-size:larger
+        }
+        div#rotate {
+            font-family: myFirstFont;
+            font-size: larger;
+            transform:rotate(20deg)
+            
+        }
+        div#animation {
+          
+           animation:example;
+           animation-duration:5s
+        }
+        @keyframes example {
+            from { background-color:red
+            }
+            to {
+                background-color: yellow
+            }
+        }
+        div#animation2 {
+            animation: example;
+            background-color:pink;
+            animation-duration: 8s;
+            width:200px
+        }
+
+        @keyframes example {
+            20% {
+                background-color: red
+            }
+            30% {
+                background-color: yellow
+            }
+            50% {
+                background-color: green
+            }
+            90% {
+                background-color: pink
+            }
+        }
+        .multi {
+            column-count:3;
+            column-gap:50px
+        }
+    </style>
+</head>
+<body>
+    <div style="color:red">
+        <div id="animation">These are employee details</div>
+        <h1 [align]='alignment'>First Name:{{fristname}}</h1>
+        <h2 align={{alignment}}>Last Name:{{lastname}}</h2>
+        <h3 align="center">Full Name:{{getFullname()}}</h3>
+        <h4 align="center" *ngIf='showDetails'>Gender:{{gender}}</h4>
+        <h4 align="center" *ngIf='showDetails'>Age:{{age}}</h4> <br />
+        <button on-click="onToggeles()" [ngStyle]="getStyle()">
+            Show Details
+        </button><br />
+        Please Enter Adress :
+        <input [(ngModel)]="adress" />
+        <br />
+        your adress is : {{adress}} <br />
+        Property Binding
+        <button [disabled]='isDisabaled'>Enable disable functionality</button><br />
+
+        <button [ngClass]='getClass()'>
+            ngClass binding
+        </button>
+        <button style="color:red" [style.fontWeight]="isBold ? 'bold' :'normal'">
+            Style Binding
+        </button>
+        <button style="color:red" [style.fontSize.px]="fontSize">
+            Style Binding
+        </button>
+        <button [ngStyle]="getStyle()">
+            Style Binding
+        </button>
+
+        <div id="animation2"><h4 align="center">[Age]:{{gender}}</h4></div>
+        <br />
+        This is horgontal Line
+        <hr width="50%" color="red" />
+        <font size="-1" face="Bedrock">Font size -1</font>
+        <font size="1" color="green">Font size 1</font>
+        <font size="2">Font size 2</font>
+        <font size="3" color="rgb(99,9,8)">Font size 3</font>
+    </div>
+
+    <p>
+        this is paragraph &nbsp;&nbsp;&nbsp; this is paragraph with extra space <b>Selector css test</b>
+        this is  not paragraph.
+        *
+        **
+        ***
+        ****
+
+    </p>
+    <pre> this is pre example
+      *
+      **
+      ***
+      ****
+        </pre>
+
+
+    <b class="style1">this is bold with class style exmp </b>
+    <i>this italic</i>
+    <u style="color:orangered;border:dotted">this is inline styled underlined</u>
+    H<sub>2</sub>O <br />
+    10<sup>2</sup>
+    <abbr title="Vishnu Srivastava">VS</abbr>
+    <address>2nd main, kodichickenhalli</address>
+    <img src="" alt="Vishnu Image" height="100" width="100" />
+    <table id="idSelector">
+        <thead>
+            <tr><td>This header of the table Id selector</td></tr>
+        </thead>
+        <tr>
+            <td width="500px" class="all">Row1Column1</td>
+            <td>Row1Column2</td>
+            <td>Row1Column3</td>
+        </tr>
+        <tr>
+            <td>Row2Column1</td>
+            <td>Row2Column2</td>
+            <td>Row2Column3</td>
+        </tr>
+        <tfoot><tr>this is footer of the table</tr></tfoot>
+    </table>
+    <!--List-->
+    This is unodered list
+    <ul>
+        <li>Vishnu</li>
+        <li>Subhash</li>
+
+        <li>Arjun</li>
+    </ul>
+    This is odered list
+    <ul>
+        <li>Vishnu</li>
+        <li>Subhash</li>
+        <li>Arjun</li>
+    </ul>
+    This is hyperlink exmp
+    <a href="www.google.com">Click here to go on google</a>
+    <iframe width="200px" height="100px"> This is frame</iframe>
+
+    <form>
+        Name <input type="text" />
+        Email <input type="text" />
+        file upload <input type="file" accept="image/*" />
+        <input type="submit" />
+    </form>
+    <marquee direction="right">Moving Text</marquee>
+    <b style="font-size:large">CSS LAYES EXAMPLE</b>
+    <div id="idboderSelectorCss3" style="width:300px;height:50px;background-color:red;z-index:3"></div>
+    <div style="width:300px;height:50px;background: repeating-linear-gradient(pink ,green,red);z-index:2"></div>
+    <div id="idboderSelectorCss4" style="width:300px;height:50px;background-color:yellow;z-index:1"></div><br />
+    Elispsis example
+    <p class="elipsis"> This is example mxx dnvjdnfd  djfd kdfjdnfd fkdfnkd kdfnkdf nkdfn kjkckd kjdn jdnf jkdn jd</p><br />
+    clip word
+    <p class="break"> This is example mxx dnvjdnfd  djfd kdfjdnfd fkdfnkd kdfnkdf nkdfn kjkckd kjdn jdnf jkdn jd</p><br />
+    Wrap Word
+    <p class="wrap"> This is example mxx dnvjdnfd  djfd kdfjdnfd fkdfnkd kdfnkdf nkdfn kjkckd kjdn jdnf jkdn jd</p><br />
+
+    <div class="customFont">This is custom font type face from woff file</div>
+    <div id="rotate">This is custom font type face from woff file</div><br />
+                                                                       <div class="multi">
+                                                                           It takes a special kind of talent to write such utter non-sense for a hundred and forty-five minutes. But Sajid Nadiadwala (producer and story), along with Sara Bodinar (story and screenplay), Tasha Bhambra, Sparsh Khetarpal and Sajid Khan (he's been credited for screenplay despite everything) have that in abundance. In keeping with the theme of the first three installments - Housefull 1, 2 and 3, Akshay Kumar, Riteish Deshmukh, Bobby Deol, Kriti Sanon, Kriti Kharbanda and Pooja Hegde-starrer is just that. A hundred and forty-five minutes of non-sense.
+
+                                                                           We meet the boys in their present-day avatar in 2019. Akshay (Harry) is in love with Kriti Kharbanda (Neha), Riteish (Roy) is in love with Pooja Hegde (Pooja) and Bobby (Max) is in love with Kriti Sanon (Kriti). That these women are filthy rich, and marrying them would help the men pay off a hefty debt they owe Sharad Kelkar (Michael Bhai) is a mere coincidence. They meet their prospective father-in-law, Ranjeet (Thakral) and after much deliberation, convince him for the rishta.
+                                                                       </div>
+   
+</body>
+
+</html>
+

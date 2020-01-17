@@ -1,0 +1,22 @@
+C:\Users\Vishnu\source\repos\Angular2Demo\DotNetCoreAPI\bin\Debug\netcoreapp2.0\DotNetCoreAPI.deps.json
+C:\Users\Vishnu\source\repos\Angular2Demo\DotNetCoreAPI\bin\Debug\netcoreapp2.0\DotNetCoreAPI.runtimeconfig.json
+C:\Users\Vishnu\source\repos\Angular2Demo\DotNetCoreAPI\bin\Debug\netcoreapp2.0\DotNetCoreAPI.runtimeconfig.dev.json
+C:\Users\Vishnu\source\repos\Angular2Demo\DotNetCoreAPI\bin\Debug\netcoreapp2.0\DotNetCoreAPI.dll
+C:\Users\Vishnu\source\repos\Angular2Demo\DotNetCoreAPI\bin\Debug\netcoreapp2.0\DotNetCoreAPI.pdb
+C:\Users\Vishnu\source\repos\Angular2Demo\DotNetCoreAPI\obj\Debug\netcoreapp2.0\DotNetCoreAPI.csprojAssemblyReference.cache
+C:\Users\Vishnu\source\repos\Angular2Demo\DotNetCoreAPI\obj\Debug\netcoreapp2.0\DotNetCoreAPI.csproj.CoreCompileInputs.cache
+C:\Users\Vishnu\source\repos\Angular2Demo\DotNetCoreAPI\obj\Debug\netcoreapp2.0\DotNetCoreAPI.AssemblyInfoInputs.cache
+C:\Users\Vishnu\source\repos\Angular2Demo\DotNetCoreAPI\obj\Debug\netcoreapp2.0\DotNetCoreAPI.AssemblyInfo.cs
+C:\Users\Vishnu\source\repos\Angular2Demo\DotNetCoreAPI\obj\Debug\netcoreapp2.0\DotNetCoreAPI.dll
+C:\Users\Vishnu\source\repos\Angular2Demo\DotNetCoreAPI\obj\Debug\netcoreapp2.0\DotNetCoreAPI.pdb
+C:\Users\Vishnu\Desktop\Imp Pro\Angular2Demo\DotNetCoreAPI\bin\Debug\netcoreapp2.0\DotNetCoreAPI.deps.json
+C:\Users\Vishnu\Desktop\Imp Pro\Angular2Demo\DotNetCoreAPI\bin\Debug\netcoreapp2.0\DotNetCoreAPI.runtimeconfig.json
+C:\Users\Vishnu\Desktop\Imp Pro\Angular2Demo\DotNetCoreAPI\bin\Debug\netcoreapp2.0\DotNetCoreAPI.runtimeconfig.dev.json
+C:\Users\Vishnu\Desktop\Imp Pro\Angular2Demo\DotNetCoreAPI\bin\Debug\netcoreapp2.0\DotNetCoreAPI.dll
+C:\Users\Vishnu\Desktop\Imp Pro\Angular2Demo\DotNetCoreAPI\bin\Debug\netcoreapp2.0\DotNetCoreAPI.pdb
+C:\Users\Vishnu\Desktop\Imp Pro\Angular2Demo\DotNetCoreAPI\obj\Debug\netcoreapp2.0\DotNetCoreAPI.csprojAssemblyReference.cache
+C:\Users\Vishnu\Desktop\Imp Pro\Angular2Demo\DotNetCoreAPI\obj\Debug\netcoreapp2.0\DotNetCoreAPI.csproj.CoreCompileInputs.cache
+C:\Users\Vishnu\Desktop\Imp Pro\Angular2Demo\DotNetCoreAPI\obj\Debug\netcoreapp2.0\DotNetCoreAPI.AssemblyInfoInputs.cache
+C:\Users\Vishnu\Desktop\Imp Pro\Angular2Demo\DotNetCoreAPI\obj\Debug\netcoreapp2.0\DotNetCoreAPI.AssemblyInfo.cs
+C:\Users\Vishnu\Desktop\Imp Pro\Angular2Demo\DotNetCoreAPI\obj\Debug\netcoreapp2.0\DotNetCoreAPI.dll
+C:\Users\Vishnu\Desktop\Imp Pro\Angular2Demo\DotNetCoreAPI\obj\Debug\netcoreapp2.0\DotNetCoreAPI.pdb

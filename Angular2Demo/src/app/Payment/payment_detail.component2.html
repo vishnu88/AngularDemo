@@ -1,0 +1,60 @@
+﻿
+<style>
+    input.ng-touched.ng-invalid {
+        border-color :red
+    }
+    input.ng-valid {
+        border-color: green
+    }
+</style>
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+    <!--<input  name="pmId" [(ngModel)]="_paymentDetailService.formData.pmId"/>-->
+    <div class="form-group">
+        <!--******OwnerName-->
+        <div class="inputgroup">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-user-circle"></i>
+                </div>
+            </div>
+            <input name="cardOwnerName"  [(ngModel)]= '_paymentDetailService.formData.cardOwnerName' class="form-control" placeholder="Card Owener Name" required />
+        </div>
+        <!--CardNumber-->
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fa fa-credit-card"></i>
+                </div>
+            </div>
+            <input name="cardNumber" #cardNumber="ngModel" [(ngModel)]="_paymentDetailService.formData.cardNumber" class="form-control"  placeholder="Card Number" required maxlength="16" minlength="16"/>
+        </div>
+        <!--Expiry and cvv-->
+        <div class="form-row">
+            <!--Expiry-->
+            <div class="input-group col-md-7">
+                <div class="input-group-prepend">
+                    <div class="input-group-text bg-white">
+                        <i class="fa fa-calendar"></i>
+                    </div>
+                </div>
+                <input name="cardExpirationDate" #cardExpirationDate="ngModel" [(ngModel)]="_paymentDetailService.formData.cardExpirationDate" class="form-control" placeholder="MM/YY" required maxlength="5" minlength="5" />
+            </div>
+            <!--CVV-->
+            <div class="input-group col-md-5">
+                <div class="input-group-prepend">
+                    <div class="input-group-text bg-white">
+                        <i class="fa fa-key"></i>
+                    </div>
+                </div>
+                <input name="cvv" #cvv="ngModel" [(ngModel)]="_paymentDetailService.formData.cvv" class="form-control" placeholder="CVV" required maxlength="3" minlength="3" />
+            </div>
+
+        </div>
+        
+
+    </div>
+    <!--Submit Button-->
+    <div class="form-group">
+        <button class="btn btn-success btn-lg btn-block" type="submit" (click)="onSubmit"><i class="fa fa-database"></i>{{submitStatus}}</button>
+    </div>
+</form>

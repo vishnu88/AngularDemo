@@ -1,0 +1,22 @@
+﻿{{error}}
+
+<table class=" table-hover table-bordered" >
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Card Number</th>
+            <th>Date</th>
+            <th>CVV</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of _service.list.reverse()">
+            <td (click)="populateData(p)">{{p.cardOwnerName}}</td>
+            <td (click)="populateData(p)">{{p.cardNumber}}</td>
+            <td (click)="populateData(p)">{{p.cardExpirationDate}}</td>
+            <td (click)="populateData(p)">{{p.cvv}}</td>
+        </tr>
+    </tbody>
+    
+
+</table>
